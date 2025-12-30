@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Trang cá nhân - Phạm Minh Vũ</title>
+    <title>ChatGPT UI Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Phạm Minh Vũ</h1>
-    <p>Chào mừng bạn đến với website cá nhân của tôi.</p>
 
-    <h2>Giới thiệu</h2>
-    <p>Tôi đang xây dựng website cá nhân trên GitHub Pages.</p>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>ChatGPT</h2>
+        <button class="new-chat">+ New chat</button>
+    </div>
 
-    <h2>Liên hệ</h2>
-    <p>Email: example@gmail.com</p>
+    <!-- Main chat -->
+    <div class="chat-area">
+        <div class="messages" id="messages">
+            <div class="message bot">Xin chào! Tôi có thể giúp gì cho bạn?</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Send a message...">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
