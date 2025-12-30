@@ -8,7 +8,7 @@ async function sendMessage() {
 
   try {
     const res = await fetch(
-      "https://TEN-BACKEND.onrender.com/chat",
+      "https://chatgpt-backend.onrender.com/chat",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
